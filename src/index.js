@@ -1,8 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 import './index.css'
-import App from './App'
-import * as serviceWorker from './serviceWorker'
-
-ReactDOM.render(<App />, document.getElementById('root'))
-serviceWorker.unregister()
+import Demo from './pages/Demo'
+const rootDom = document.getElementById('root')
+render(<Demo />, rootDom)
