@@ -1,0 +1,15 @@
+{
+    "editor.rulers": [
+        120
+    ],
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "eslint.run": "onSave",
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+    "eslint.options": {
+        "configFile": "./.eslintrc"
+    },
+    "files.eol": "\n"
+}
