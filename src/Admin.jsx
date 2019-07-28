@@ -1,10 +1,10 @@
 import React, { Component } from "react"
+import PropsType from "prop-types"
 import { Row, Col } from "antd"
 import Header from "./pages/header"
 import NavLeft from "./pages/navigation"
 // import Content from "./pages/content"
 import "./common/style/common.less"
-// import Footer from "./pages/footer"
 
 export default class Admin extends Component {
 
@@ -18,8 +18,10 @@ export default class Admin extends Component {
                 <Row className="content">
                     {this.props.children}
                 </Row>
-                {/* <Footer /> */}
             </Col>
         </Row>
     }
+}
+Admin.propsType = {
+    children: PropsType.node
 }

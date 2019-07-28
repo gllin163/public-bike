@@ -38,9 +38,7 @@ export default class NavLeft extends Component {
                         </Menu.SubMenu>
                     </Menu>
                 })
-
             }
-
         </div >
     }
 }
