@@ -23,10 +23,10 @@ export default class NavLeft extends Component {
                 <img src={iconImg} alt="" />
                 <h1>共享单车系统</h1>
             </div>
-            {
-                MenuConfig && MenuConfig.map((pItem, i) => {
-                    const { title, key, children } = pItem || {}
-                    return <Menu key={i + "itemP"} theme="dark" mode="vertical">
+            {MenuConfig && MenuConfig.map((pItem, i) => {
+                const { title, key, children } = pItem || {}
+                return <Link to={key}>
+                    <Menu key={i + "itemP"} theme="dark" mode="vertical">
                         <Menu.SubMenu key={key + "menu"} title={<span>{title}</span>}>
                             {
                                 children && children.map((item, k) => {
@@ -37,8 +37,8 @@ export default class NavLeft extends Component {
                             }
                         </Menu.SubMenu>
                     </Menu>
-                })
-            }
+                </Link>
+            })}
         </div >
     }
 }

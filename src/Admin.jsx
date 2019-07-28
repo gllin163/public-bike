@@ -3,7 +3,6 @@ import PropsType from "prop-types"
 import { Row, Col } from "antd"
 import Header from "./pages/header"
 import NavLeft from "./pages/navigation"
-// import Content from "./pages/content"
 import "./common/style/common.less"
 
 export default class Admin extends Component {
