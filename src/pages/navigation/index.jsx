@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Menu } from "antd"
+import { Link } from "react-router-dom"
 import iconImg from "../../common/recourse/end_point.png"
 import MenuConfig from "../../config/menuConfig"
 import "./index.less"
@@ -29,7 +30,9 @@ export default class NavLeft extends Component {
                         <Menu.SubMenu key={key + "menu"} title={<span>{title}</span>}>
                             {
                                 children && children.map((item, k) => {
-                                    return <Menu.Item key={item.key + "child-menu"}>{item.title}</Menu.Item>
+                                    return <Menu.Item key={item.key + "child-menu"}>
+                                        <Link to={item.key}> {item.title}</Link>
+                                    </Menu.Item>
                                 })
                             }
                         </Menu.SubMenu>
